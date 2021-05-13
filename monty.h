@@ -36,3 +36,19 @@ typedef struct instruction_s
 char *opcode;
 void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+/*operaciones*/
+void pall(stack_t **head, unsigned int counter);
+void push(stack_t **head, unsigned int counter);
+void pint(stack_t **head, unsigned int counter);
+void swap(stack_t **head, unsigned int counter);
+void pop(stack_t **head, unsigned int counter);
+void nop(stack_t **head, unsigned int counter);
+void add(stack_t **head, unsigned int counter);
+void sub(stack_t **head, unsigned int counter);
+void mul(stack_t **head, unsigned int counter);
+void _div(stack_t **head, unsigned int counter);
+/*structure */
+void select_func(stack_t **head, char *token, unsigned int counter);
+/*otro*/
+void free_all(stack_t **head);
+#endif
